@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mukta', sans-serif;
+  font-size: 16px;
+  color: #323232;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #06ebc4;
+}
+
+.menu li {
+  padding-left: 2vh;
+}
+
+.header-principal {
+  width: 80%;
+  height: 10vh;
+  margin: 0 10%;
+  color: #fff;
+  font-size: 1em;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 2;
+}
+
+.logo {
+  width: 10%;
+  margin-top: 2vh;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.dp-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  height: 80vh;
+  background-color: #e8fff9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  flex-direction: column;
+  font-size: 1.2em;
+}
+
+.img-bg-01 {
+  background-image: url(../images/pessoas.jpg);
+}
+
+.elmt-fosco {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.fosco {
+  width: 100%;
+  background: #101211;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.elmt-titulo {
+  color: #77b5a5;
+  font-size: 2em;
+}
+
+.elmt-texto {
+  font-size: 1em;
+  font-weight: 100;
+  padding-top: 2vh;
+  line-height: 1.5em;
+}
+
+.elmt-fosco .elmt-titulo {
+  color: #06ebc4;
+  font-size: 5em;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.elmt-fosco .elmt-subtitulo {
+  color: #06ebc4;
+  font-size: 3em;
+  text-align: center;
+  padding: 0;
+}
+
+.elmt-fosco .elmt-texto {
+  padding-top: 0;
+  margin: 0;
+  font-size: 2em;
+  text-align: center;
+}
+
+.elmt-imagem {
+  width: 20%;
+  max-width: 200px;
+}
+
+.elmt-imagem img {
+  width: 100%;
+}
+
+.elmt-empresa {
+  width: 80%;
+}
+
+.cabecalho-dados {
+  width: 100%;
+  text-align: center;
+}
+
+.caixas {
+  flex-direction: row;
+}
+
+.titulo-bco {
+  color: #fff;
+}
+
+.elmt-dados {
+  width: 40%;
+  height: 60vh;
+  margin: 1vh;
+  padding: 5vh;
+  text-align: center;
+  background: #d5e3df;
+  border-radius: 0.2vh;
+}
+
+.elmt-dados .elmt-titulo {
+  color: #000;
+  border-bottom: 2px solid #77b5a5;
+}
+
+.caixa-texto {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctn-equipe {
+  height: auto;
+}
+
+.fundo-color {
+  background: #77b5a5;
+}
+
+.equipe {
+  width: 80%;
+  height: 60%;
+  margin: 3vh 0;
+  justify-content: space-between;
+}
+
+.elmt-equipe {
+  width: 25%;
+  flex-direction: column;
+}
+
+.elmt-equipe figure {
+  width: 80%;
+}
+
+.elmt-equipe img {
+  width: 100%;
+  border-radius: 20vh;
+}
+
+.equipe-dados {
+  text-align: center;
+}
+
+.ctn-contato {
+  width: 30%;
+}
+
+.form-contato input, textarea, select, button {
+  font-family: 'Mukta', sans-serif;
+  font-size: 1em;
+  width: 100%;
+  height: 5vh;
+  color: #323232;
+  background: #d5e3df;
+  padding: 1vh;
+  border: 1px solid #d1d1d1;
+}
+
+.form-contato input:focus, textarea:focus {
+  outline: 0;
+  border: 1px solid #a2a2a2;
+}
+
+.form-contato textarea {
+  width: 100%;
+  height: 15vh;
+  resize: none;
+}
+
+.form-contato fieldset, button {
+  margin-bottom: 1vh;
+  font-size: 1em;
+  border-radius: 0.2vh;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.form-contato button {
+  background: #77b5a5;
+  color: #fff;
+}
+
+.form-contato button:hover {
+  background: #4c8a7a;
+  color: #fff;
+}
+
+footer {
+  height: 15vh;
+  background: #101211;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header-principal {
+    padding-bottom: 1vh;
+  }
+
+  .container {
+    height: auto;
+    justify-content: space-around;
+  }
+
+  .img-bg-01 {
+    height: 60vh;
+  }
+
+  .elmt-fosco .elmt-titulo {
+    font-size: 3em;
+  }
+
+  .elmt-fosco .elmt-subtitulo {
+    font-size: 2em;
+  }
+
+  .elmt-fosco .elmt-texto {
+    font-size: 1.2em;
+  }
+
+  .elmt-imagem {
+    margin: 3vh 0 0 0;
+  }
+
+  .elmt-empresa {
+    margin: 0 0 3vh 0;
+  }
+
+  .cabecalho-dados {
+    margin: 3vh 0 0 0;
+  }
+
+  .caixas {
+    margin: 0 0 3vh 0;
+    padding: 1vh;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .elmt-titulo {
+    font-size: 1.5em;
+  }
+
+  .elmt-dados {
+    width: 80%;
+    height: auto;
+  }
+
+  .equipe {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .elmt-equipe {
+    width: 45%;
+    margin: 1vh;
+    flex-direction: column;
+  }
+
+  .elmt-equipe figure {
+    width: 40%;
+  }
+
+  .elmt-equipe .equipe-dados {
+    width: 60%;
+    font-size: 0.8em;
+  }
+
+  .ctn-contato {
+    width: 50%;
+    margin: 3vh 0;
+  }
+
+  .form-contato button {
+    height: 10vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .elmt-fosco .elmt-titulo {
+    font-size: 2em;
+  }
+
+  .elmt-fosco .elmt-subtitulo {
+    font-size: 1.2em;
+  }
+
+  .elmt-fosco .elmt-texto {
+    font-size: 1em;
+  }
+
+  .elmt-equipe figure {
+    width: 30%;
+  }
+
+  .elmt-equipe .equipe-dados {
+    width: 100%;
+  }
+
+  .form-contato input, textarea, select, button {
+    height: 10vh;
+  }
+
+  .form-contato textarea {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 567px) {
+  body {
+    font-size: 12px;
+  }
+
+  .header-principal {
+    flex-direction: column;
+    padding-bottom: 1vh;
+  }
+
+  .logo {
+    width: 15%;
+  }
+
+  .elmt-equipe {
+    width: 90%;
+  }
+
+  .elmt-equipe figure {
+    width: 40%;
+  }
+
+  .elmt-equipe .equipe-dados {
+    font-size: 1.2em;
+  }
+
+  .ctn-contato {
+    width: 80%;
+    margin: 3vh 0;
+  }
+
+  .form-contato input, textarea, select, button {
+    height: 5vh;
+  }
+
+  .form-contato textarea {
+    height: 25vh;
+  }
+}
